@@ -1,0 +1,35 @@
+{
+  "name": "js-framework-benchmark-qwik",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "js-framework-benchmark": {
+    "frameworkVersionFromPackage": "@builder.io/qwik",
+    "frameworkHomeURL": "https://qwik.builder.io/",
+    "customURL": "/dist"
+  },
+  "scripts": {
+    "build": "qwik build",
+    "build.client": "vite build",
+    "build.preview": "vite build --ssr src/entry.preview.tsx",
+    "build.server": "vite build -c static-vite.config.ts",
+    "build-dev": "qwik build",
+    "build-prod": "qwik build"
+  },
+  "author": "Christian Köberl",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/krausest/js-framework-benchmark",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krausest/js-framework-benchmark.git"
+  },
+  "dependencies": {
+    "@builder.io/qwik": "0.24.0",
+    "@builder.io/qwik-city": "0.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.15.3",
+    "typescript": "5.0.2",
+    "vite": "4.2.1",
+    "vite-tsconfig-paths": "3.5.0"
+  }
+}
